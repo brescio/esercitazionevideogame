@@ -1,25 +1,20 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { GameItem } from 'src/app/model/game-item';
-
+import { Component, OnInit } from '@angular/core';
+import { GameItem } from 'src/app/models/game-item.interface';
+import { GameListService } from 'src/app/services/game-list.service';
 
 @Component({
-  selector: 'app-games-list-component',
-  templateUrl: './games-list-component.component.html',
-  styleUrls: ['./games-list-component.component.scss']
+  selector: 'app-game-list',
+  templateUrl: './game-list.component.html',
+  styleUrls: ['./game-list.component.scss']
 })
-export class GamesListComponentComponent implements OnInit {
+export class GameListComponent implements OnInit {
 
-  @Output()
-  selectGameId: EventEmitter<number> =new EventEmitter();
-  constructor(private g:GameListServiceService) { }
-
-  gameItems: GameItem[];
-  ngOnInit(): void {
-    this.gameItems= this.g.lista();
+  gameList: GameItem[] = [];
+  constructor(private gameListService: GameListService) {
+    this.gameList = this.gameListService.getGameList();
   }
 
-  selectGameItem(id:number){
-    this.selectGameId.emit(id);
+  ngOnInit(): void {
   }
 
 }

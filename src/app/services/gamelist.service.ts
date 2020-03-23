@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
-import { GameItem } from 'src/app/models/game-item';
+import { GameItem } from 'src/app/models/game-item.interface';
 
 @Injectable({
   providedIn: 'root'
 })
-export class GameListServiceService {
-  private listaVideogiochi: GameItem[]=[
-
-
+export class GameListService {
+  private gamelist: GameItem[]=[
+    {
+      id:1, nome :"bioshok", genere :"sparatutto",releasedate :new Date(2007,4) 
+    
+    }
     {
       id:1,nome: 'fifa20',descrizione: 'gioco di calcio',	genere: 'sport',rating: 'aaa',prezzo: 200,anno_uscita: new Date()
 
@@ -24,8 +26,8 @@ export class GameListServiceService {
   constructor() { 
 
   }
-  lista(){ //  get di ritorno la lista dei viedogiochi 
-    return this.listaVideogiochi;
+  get gamelista(){ //  get di ritorno la lista dei viedogiochi 
+    return this.gamelista;
   }
 
 
