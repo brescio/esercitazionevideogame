@@ -20,19 +20,11 @@ selectedMenuItem:EventEmitter<number>=new EventEmitter();
   ngOnInit(): void {
 
   }
-  selectedComponents(id:number){
+  selectedComponent(id:number){
     for(let menuItem of this.menuList){
-      menuItem.selected=id ===menuItem.id;
-    }
-    const arr = this.menuList.filter(item =>{
-      return item.selected;
-    })
-    const asd = this.menuList.find(item =>{
-      return item.selected;
-    })
-    this.menuList.some(item =>{
-      return item.selected;
-    })
-    this.selectedMenuItem.emit(id);
+      menuItem.selected = id === menuItem.id;
+    }    
+
+
   }
 }
