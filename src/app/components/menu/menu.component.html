@@ -1,4 +1,3 @@
-<p>menu works!</p>
 <div>
     <h2>Scroll Down</h2>
     <p>Scroll down to see the sticky effect.</p>
@@ -7,6 +6,8 @@
   <ul>
     <li *ngFor="let menuItem of menuList">
         {{menuItem.description}}
+        <button (click=" selectedComponents(menuItem.id)"></button>
     </li>
+
 </ul>
   
