@@ -6,6 +6,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { EditGameComponent } from './components/edit-game/edit-game.component';
 import { GameDetailComponent } from './components/game-detail/game-detail.component';
 import { GameListComponent } from './components/game-list/game-list.component';
+import { MenuItem } from './models/menu-item.interface/menu-item.interface.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { GameListComponent } from './components/game-list/game-list.component';
     MenuComponent,
     EditGameComponent,
     GameDetailComponent,
-    GameListComponent
+    GameListComponent,
+    MenuItem.InterfaceComponent
   ],
   imports: [
     BrowserModule
