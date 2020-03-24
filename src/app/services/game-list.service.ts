@@ -7,7 +7,7 @@ import { GameItem } from '../models/game-item.interface';
 export class GameListService {
 
   private gameListStored: GameItem[] = [
-    { id: 1, description: "gioco bello", name: "Bioshock", genre: "Sparatutto", releaseDate: new Date(2007, 4)}
+    { id: 1, description: "gioco bello", name: "Bioshock", genere: "Sparatutto", releaseDate: new Date(2007, 4)}
   ];
 
   constructor() { }

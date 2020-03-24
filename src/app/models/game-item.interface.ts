@@ -1,7 +1,7 @@
 export interface GameItem {
     id: number;
     name: string;
-    genre: string;
+    genere: string;
     releaseDate: Date;
     description: string;
 }
