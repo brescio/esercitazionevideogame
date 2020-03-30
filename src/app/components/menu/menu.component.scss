@@ -1,3 +1,14 @@
 .active{
-    font-weight: bold;
+    font: bold;
+    font-size: 22px
+} 
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
 }
+  .button{
+      background-color: transparent;
+  }

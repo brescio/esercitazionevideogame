@@ -1,5 +1,13 @@
-<ul>
-    <li *ngFor="let item of gameList"> {{item.name}}
-        <button (click)="showDetail(item.id)">Vai al dettaglio</button>
-    </li>
-</ul>
+<p>Lista di Videogiochi</p>
+<div>
+    <p>Lista di Videogiochi</p>
+    <select (change)="selectChange($event.target.value)">
+        <option [value]="genere.id" *ngFor="let genere of genereList">{{genere.description}}</option>
+    </select>
+
+    <div *ngFor='let game of gameList'>
+        <ul>
+            <li *ngIf="game.genereId === genereSelezionato">{{game.name}}</li>
+        </ul>
+    </div>
+</div> 
