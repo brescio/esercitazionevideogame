@@ -1,5 +1,6 @@
 <app-menu (selectMenuItem)="componentToShow = $event"></app-menu>
-
+<!-- <app-login> </app-login> -->
+<router-outlet> </router-outlet>  <!-- METTO COME PAGINA DI DEFAULT IL LOGIN-->
 <div [ngSwitch]="componentToShow">
     <app-home *ngSwitchCase="1"></app-home>
     <app-game-list *ngSwitchCase="2"></app-game-list>

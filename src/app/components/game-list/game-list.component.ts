@@ -1,6 +1,7 @@
 import { Component, OnInit,EventEmitter, Output } from '@angular/core';
 import { GameItem } from 'src/app/interface/game-item.interface';
 import { Genere, genereListDB } from 'src/app/interface/genere';
+import { GamesListService } from 'src/app/services/game-list.service';
 
 
 @Component({

@@ -12,8 +12,8 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
    
   }
-   username: String;
-    password: String;
+   username: string;
+    password: string;
     admin:string;
     login(){
       if(this.username != null && this.username != '' && this.password != null && this.password != ''){

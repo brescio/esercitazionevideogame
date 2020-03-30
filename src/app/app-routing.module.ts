@@ -12,7 +12,7 @@ const appRoutes: Routes = [
   {path: 'edit', component: EditGameComponent},
   {path: 'detail', component: GameDetailComponent},
   {path: 'login', component: LoginComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'}
+  {path: '', redirectTo: '/login', pathMatch: 'full'}
 ]
 
 @core.NgModule({

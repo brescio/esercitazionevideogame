@@ -24,7 +24,7 @@ const appRoutes: Routes = [
     MenuComponent,
     EditGameComponent,
     GameDetailComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
