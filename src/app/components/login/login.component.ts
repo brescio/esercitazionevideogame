@@ -24,10 +24,13 @@ export class LoginComponent implements OnInit {
       }
     
     }
-    loginAdmin(){
-      if(this.admin != null && this.admin != this.username && this.admin != this.password){
-        sessionStorage.setItem('user',this.admin);
-        this.router.navigateByUrl('/editGame');
+    admin1(){
+      if(this.username != null && this.username != '' && this.password != null && this.password != ''){
+        sessionStorage.setItem('user',this.username);
+      this.router.navigateByUrl('/home');
+    
+    
       }
+    
     }
     }

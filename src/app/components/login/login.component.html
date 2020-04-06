@@ -1,4 +1,3 @@
-<p>login works!</p>
 <form (ngSubmit)="login()">
 <div class="form-group" >
     <p class="text" >Username</p>
@@ -13,7 +12,7 @@
 </div>
 
 <div>
-    <button type="submit">Submit</button>
+    <button (click)="login()"  type="submit">login</button>
 </div>
 
 </form>

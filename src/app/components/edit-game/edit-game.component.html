@@ -1,1 +1,22 @@
-<p>edit-game works!</p>
+<div>
+    <div class="content">
+        <h1>inserisci l'id del gioco che vuoi</h1>
+        <label for="id">id:</label>
+        <input type="text" id="id" name="id" #id>
+        <button (click)="form(id.value)" type="submit">invia</button>
+    </div>
+    <br><br>
+    <div>
+        <form [formGroup]="gameForm">
+            <div>
+                <label for="name">name</label>
+                <input type="text" id="name" formControllerName="name">
+            </div>
+            <div>
+                <label for="genereid">descrizione</label>
+                <input type="text" id="genereid" formControllerName="genereid">
+            </div>
+        </form>
+
+    </div>
+</div>

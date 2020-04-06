@@ -16,7 +16,7 @@ constructor(private gamesListService: GamesListService, private activatedRoute: 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe( params => {
       console.log(params)
-      this.game = this.gamesListService.GameItem(Number(params.get('id'))); 
+      this.game = this.gamesListService.getGameItem(Number(params.get('id')));   
     });
 
 

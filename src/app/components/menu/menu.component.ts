@@ -30,4 +30,9 @@ export class MenuComponent implements OnInit {
     this.selectMenuItem.emit(id);
   }
 
+  logout(){
+    sessionStorage.removeItem("");
+    
+  }
+
 }

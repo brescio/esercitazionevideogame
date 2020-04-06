@@ -1,8 +1,10 @@
 export interface User {
-    email: string;
-    name: string;
-    lastName: string;
-    passworld: string;
-    dateOfBirthDay: Date;
-    sex: string;
+    id:number;
+    nomeUtente: String;
+    eta:number;
+    indirizzo:String;
+    //name: string;
+   // lastName: string;    
+    password: string;
+    //dateOfBirthDay: Date;
  } 

@@ -9,13 +9,17 @@ import { EditGameComponent } from './components/edit-game/edit-game.component';
 import { GameDetailComponent } from './components/game-detail/game-detail.component';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
+
 import { from } from 'rxjs';
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'gamesList', component: GamesListComponent },
   { path: 'gameDetail', component: GameDetailComponent },
-  { path: 'editGame', component: EditGameComponent }
+  { path: 'editGame', component: EditGameComponent },
+  { path: 'login', component: LoginComponent},
+  { path: '', redirectTo: '/login', pathMatch:'full' }
 ];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +32,9 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
