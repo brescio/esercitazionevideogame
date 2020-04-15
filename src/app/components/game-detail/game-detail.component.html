@@ -1,5 +1,5 @@
 
-<table>
+<!--  <table>
     <tr>
         <td>
             ID:
@@ -9,7 +9,7 @@
         </td>
     </tr>
     <tr>
-        <td>
+       <td>
             Nome:
         </td>
         <td>
@@ -18,13 +18,13 @@
     </tr>
     <tr>
         <td>
-            Genere:
+            Genere:   
         </td>
         <td>
             {{ game?.genereId }} 
         </td>
     </tr>
-  <!--   <tr>
+    <tr>
         <td>
             Data rilascio:
         </td>
@@ -39,5 +39,20 @@
         <td>
             {{ game?.description }}
         </td>
-    </tr>-->
+    </tr>
+</table> -->
+<table class="table table-hover">
+    <tr class="table-success">
+        <th scope="row">id:</th>
+        <th scope="row">nome:</th>
+        <th scope="row">rating:</th>
+        <th scope="row">genere:</th>
+    </tr>
+    <tr>
+        <td>{{game?.id}}</td>
+        <td>{{game?.name}}</td>
+        rating
+        <app-rating></app-rating>
+        <td>{{game?.genereId}</td>
+    </tr>
 </table> 

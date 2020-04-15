@@ -9,7 +9,7 @@ import { EditGameComponent } from './components/edit-game/edit-game.component';
 import { GameDetailComponent } from './components/game-detail/game-detail.component';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
-
+import { RatingComponent } from './components/rating/rating.component';
 import { from } from 'rxjs';
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -29,6 +29,7 @@ const appRoutes: Routes = [
     EditGameComponent,
     GameDetailComponent,
     LoginComponent,
+    RatingComponent,
   ],
   imports: [
     BrowserModule,
