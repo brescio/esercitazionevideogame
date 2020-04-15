@@ -11,6 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { RatingComponent } from './components/rating/rating.component';
 import { from } from 'rxjs';
+import { EditUserComponent } from './components/edit-user/edit-user.component';
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'gamesList', component: GamesListComponent },
@@ -30,6 +31,7 @@ const appRoutes: Routes = [
     GameDetailComponent,
     LoginComponent,
     RatingComponent,
+    EditUserComponent,
   ],
   imports: [
     BrowserModule,
